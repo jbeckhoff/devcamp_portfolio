@@ -4,10 +4,14 @@ class BlogsController < ApplicationController
   # GET /blogs
   def index
     @blogs = Blog.all
+    @page_title = "My Portfolio Blog"
   end
 
   # GET /blogs/1
-  def show; end
+  def show
+    @page_title = @blog.title
+    @seo_keywords = @blog.body
+  end
 
   # GET /blogs/new
   def new
@@ -15,7 +19,8 @@ class BlogsController < ApplicationController
   end
 
   # GET /blogs/1/edit
-  def edit; end
+  def edit;
+  end
 
   # POST /blogs
   def create
