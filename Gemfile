@@ -13,6 +13,7 @@ gem 'friendly_id', '~> 5.2.4'
 # gem 'mini_racer', platforms: :ruby
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
+gem 'petergate', '~> 2.0', '>= 2.0.1'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.3'
