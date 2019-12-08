@@ -37,5 +37,6 @@ group :development do
 end
 
 # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'beckhoff_view_tool', git: 'https://github.com/jbeckhoff/beckhoff_view_tool'
 
 
