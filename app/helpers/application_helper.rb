@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module ApplicationHelper
-  def login_helper style
+  def login_helper style = ''
     if current_user.is_a?(GuestUser)
       (link_to 'Register', new_user_registration_path, class: style) +
           " ".html_safe +
@@ -14,7 +14,7 @@ module ApplicationHelper
   def source_helper
   	if session[:source]
   		greeting = "Thanks for visiting me from #{session[:session]}."
-  		content_tag(:p, greeting, class: "source-greeting")
+  		content_tag(:p, greeting, class: 'source-greeting')
   	end
   end
 
